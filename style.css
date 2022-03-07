@@ -1,0 +1,95 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  flex-direction: row;
+  padding: 5px;
+}
+ul > li {
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  height: 1%;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(59, 59, 59);
+  cursor: pointer;
+  border-radius: 5px;
+}
+ul > li > a {
+  padding: 5px;
+  text-decoration: none;
+  color: skyblue;
+}
+ul > li > i {
+  display: flex;
+}
+#burger {
+  color: skyblue;
+  display: none;
+}
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input {
+  font-size: 1rem;
+  background-color: rgb(105, 105, 105);
+  border: none;
+  border-radius: 5px;
+}
+
+label {
+  color: skyblue;
+  padding-bottom: 5px;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 0.1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card > .title {
+  margin-bottom: 0.25rem;
+}
+
+.card > .author {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
+}
+@media (max-width: 600px) {
+  ul > li,
+  .search-wrapper {
+    display: none;
+  }
+  ul {
+    flex-direction: column;
+  }
+  #burger {
+    float: right;
+    width: 1.2rem;
+    display: flex;
+  }
+}
